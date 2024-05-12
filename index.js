@@ -55,11 +55,17 @@ function renderCat(){
     const catObject = getSingleCatObject()
     console.log(catObject)
     console.log(catObject.image)
+    console.log(`
+    <img 
+    class="cat-img"
+    src="./images/${catObject.image}"
+    alt="${catObject.alt}"`)
     memeModalInner.innerHTML = `
     <img 
     class="cat-img"
     src="./images/${catObject.image}"
-    alt="${catObject.alt}"`
+    alt="${catObject.alt}"
+    >`
     memeModal.style.display = "flex"
 /*
 Challenge:
